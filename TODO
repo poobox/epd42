@@ -1,0 +1,14 @@
+* add embedded regression tests for drawing from progmem framebuffer, and other epd APIs
+
+* Design a vector library similar to paint, which doesn't keep a full frame-buffer
+** come up with a good resonable algorithm for rasterizing in small chunks
+*** probably just 2d clipping algorithms
+
+* figure out native unit tests and selecting which tests run in platform.ini
+
+* Clean up constant usage throughout libraries. try to make pstr_helper and test_helper
+more user friendly.
+
+* memory usage.
+** do some actualy profiling to see how close we are to 2K
+** test on new adafruit clone with more RAM
